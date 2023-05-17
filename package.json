@@ -17,5 +17,4 @@
   "dependencies": {
     "@storyblok/nuxt": "^5.4.5"
   }
-
 }
