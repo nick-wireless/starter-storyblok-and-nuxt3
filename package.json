@@ -10,11 +10,13 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/i18n": "^8.0.0-beta.12",
     "@nuxtjs/tailwindcss": "^6.6.8",
     "@types/node": "^18",
     "nuxt": "^3.4.3"
   },
   "dependencies": {
     "@storyblok/nuxt": "^5.4.5"
-  }
+  },
+  "type": "module"
 }

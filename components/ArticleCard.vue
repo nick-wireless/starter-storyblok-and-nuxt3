@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="'/' + slug" v-editable="article"
+  <NuxtLink :to="localePath(`/${slug}`)" v-editable="article"
     class="w-full h-full bg-[#f7f6fd] rounded-[5px] text-center overflow-hidden">
     <img :src="article.image.filename + '/m/600x0'" :alt="article.image.alt"
       class="w-full h-48 xl:h-72 object-cover pointer-events-none" />
@@ -13,7 +13,9 @@
     </div>
   </NuxtLink>
 </template>
- 
-<script setup >
+
+<script setup>
 defineProps({ article: Object, slug: String })
+
+const localePath = useLocalePath()
 </script>
