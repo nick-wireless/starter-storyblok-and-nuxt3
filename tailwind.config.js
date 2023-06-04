@@ -5,8 +5,12 @@ module.exports = {
     "pages/**/*.vue",
   ],
   theme: {
-    fontFamily: {
-      sans: "Roboto, sans-serif",
+    extend: {
+      fontFamily: {
+        ...require("tailwindcss/defaultTheme").fontFamily,
+        feature: "'Montserrat', sans",
+        sans: ["Inter", "sans-serif"],
+      },
     },
   },
 }

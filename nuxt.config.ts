@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     storyblokToken: ''
   },
-  css: ["~/assets/css/roboto.css"],
+  css: ['~/assets/css/tailwind.css'],
   modules: [
     ['@storyblok/nuxt', {
       accessToken: process.env.NUXT_STORYBLOK_TOKEN,
@@ -13,7 +13,8 @@ export default defineNuxtConfig({
       apiOptions: { region: 'us' }
     }],
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@nuxtjs/fontaine'
   ],
   i18n: {
       strategy: 'prefix_except_default',
